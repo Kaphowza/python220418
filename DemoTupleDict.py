@@ -47,3 +47,5 @@ print(device)
 
 for item in device.items():
     print(item)
+for k,v in device.items():
+    print(k,v)
