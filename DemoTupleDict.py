@@ -45,3 +45,5 @@ print(device)
 del device["아이폰"]
 print(device)
 
+for item in device.items():
+    print(item)
