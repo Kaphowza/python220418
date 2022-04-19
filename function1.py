@@ -7,3 +7,13 @@ def setValue(newValue):
 #호출
 retValue = setValue(5)
 print(retValue)
+
+#교집합 문자를 리턴하는 함수
+def intersect(prelist, postlist):
+    result=[]
+    for x in prelist:
+        if x in postlist and x not in result:
+            result.append(x)
+    return result
+
+print(intersect("HAM", "SPAM"))
