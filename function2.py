@@ -47,3 +47,10 @@ def userURIBulder(server, port, **user):
 
 print(userURIBulder("credu.com", "80", id="kim", passwd = "1234"))
 print(userURIBulder("credu.com", "80", id="kim", passwd = "1234", name="mike"))
+
+g = lambda x,y:x*y
+print(g(3,4))
+print(g(5,6))
+
+print((lambda x:x*x)(3))
+print(globals())
