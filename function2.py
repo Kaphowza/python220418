@@ -38,3 +38,12 @@ def union(*ar):
 
 print(union("HAN", "EGG"))
 print(union("HAM", "EGG", "SPAM"))
+
+def userURIBulder(server, port, **user):
+    strURL = "http://" + server + ":" + port + "/?"
+    for key in user.keys():
+        strURL += key + "=" + user[key] + "&"
+    return strURL
+
+print(userURIBulder("credu.com", "80", id="kim", passwd = "1234"))
+print(userURIBulder("credu.com", "80", id="kim", passwd = "1234", name="mike"))
